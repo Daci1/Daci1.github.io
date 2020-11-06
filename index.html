@@ -67,11 +67,23 @@
 
         <div>
 
-        <button class="button" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+        <button class="button" onclick="myFunction()">
         	<span>Do not press me</span>
         </button>
 
         </div>
+
+        <script>
+        	function myFunction() {
+ 			var result = confirm("Are you sure?");
+ 				if(result){
+ 					window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')
+ 				}
+ 				else{
+ 					alert("Fucking lame");
+ 				}
+			}
+        </script>
 
 
 
